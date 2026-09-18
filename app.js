@@ -121,7 +121,7 @@
     const { strings } = await DA.initChrome('about');
 
     document.getElementById('about-title').textContent = strings.aboutTitle;
-    document.getElementById('about-name').textContent = strings.scholarName || 'Mufti Mohammad Ahsan Alim';
+    document.getElementById('about-name').textContent = strings.scholarName || 'Mufti Mohammad Ahsan Alam';
     document.getElementById('about-bio').textContent = strings.aboutBio;
     document.getElementById('about-join').innerHTML = `<a href="${DA.WHATSAPP_URL}" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;">${DA.escapeHtml(strings.aboutJoin)}</a>`;
 

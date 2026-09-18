@@ -1,7 +1,7 @@
 # Daily Ahadith — website
 
 A simple, fast, no-database website: one Hadith a day from Mufti Mohammad
-Ahsan Alim's "Mustanid Ahadith" WhatsApp broadcast, in Urdu, English, Arabic,
+Ahsan Alam's "Mustanid Ahadith" WhatsApp broadcast, in Urdu, English, Arabic,
 Persian and Pashto.
 
 **Live site:** https://daily-ahadith-kz4awo6m4-pioneer1823-8290.vercel.app
@@ -16,7 +16,7 @@ site automatically within about 30 seconds.
 ```
 index.html         Homepage — today's lesson, "how it works", archive preview
 archive.html        Every lesson published so far, with a search box
-about.html           About Mufti Ahsan Alim
+about.html           About Mufti Ahsan Alam
 style.css            All styling (colors, fonts, layout, RTL handling)
 i18n.js              Language switching + shared header/footer/lang-bar
 app.js               Page-specific rendering (reads hadiths.json)
