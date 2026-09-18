@@ -4,8 +4,9 @@ A simple, fast, no-database website: one Hadith a day from Mufti Mohammad
 Ahsan Alam's "Mustanid Ahadith" WhatsApp broadcast, in Urdu, English, Arabic,
 Persian and Pashto.
 
-**Live site:** https://daily-ahadith-kz4awo6m4-pioneer1823-8290.vercel.app
-(a custom domain can be added later in Vercel's dashboard under Domains)
+**Live site:** https://daily-ahadith.vercel.app
+(this is the stable address that always shows the latest push; a custom
+domain can be added later in Vercel's dashboard under Domains)
 
 It's plain HTML/CSS/JS — no build step, no server-side code, no framework.
 This repo is connected to Vercel: every push to `main` redeploys the live
