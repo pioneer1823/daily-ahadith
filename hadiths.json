@@ -1,0 +1,70 @@
+[
+  {
+    "id": "2026-09-19",
+    "date": "2026-09-19",
+    "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+    "title": {
+      "ur": "نیت کی اہمیت",
+      "en": "The importance of intention"
+    },
+    "translation": {
+      "ur": "اعمال کا دارومدار نیتوں پر ہے، اور ہر شخص کے لیے وہی ہے جس کی اس نے نیت کی۔",
+      "en": "Actions are judged by intentions, and every person will get what they intended."
+    },
+    "source": {
+      "ur": "صحیح بخاری و صحیح مسلم",
+      "en": "Sahih al-Bukhari & Sahih Muslim"
+    }
+  },
+  {
+    "id": "2026-09-18",
+    "date": "2026-09-18",
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَصِلْ رَحِمَهُ",
+    "title": {
+      "ur": "صلہ رحمی کا حکم",
+      "en": "On keeping ties of kinship"
+    },
+    "translation": {
+      "ur": "جو اللہ اور یومِ آخرت پر ایمان رکھتا ہو اسے صلہ رحمی کرنی چاہیے۔",
+      "en": "Whoever believes in Allah and the Last Day should maintain the bonds of kinship."
+    },
+    "source": {
+      "ur": "صحیح بخاری",
+      "en": "Sahih al-Bukhari"
+    }
+  },
+  {
+    "id": "2026-09-17",
+    "date": "2026-09-17",
+    "arabic": "أَكْمَلُ الْمُؤْمِنِينَ إِيمَانًا أَحْسَنُهُمْ خُلُقًا",
+    "title": {
+      "ur": "مومن کا حسنِ اخلاق",
+      "en": "The believer's good character"
+    },
+    "translation": {
+      "ur": "ایمان میں کامل ترین مومن وہ ہیں جن کے اخلاق سب سے اچھے ہوں۔",
+      "en": "The most complete of believers in faith are those best in character."
+    },
+    "source": {
+      "ur": "سنن ترمذی",
+      "en": "Jami' at-Tirmidhi"
+    }
+  },
+  {
+    "id": "2026-09-16",
+    "date": "2026-09-16",
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    "title": {
+      "ur": "اچھی بات کہو یا خاموش رہو",
+      "en": "Speaking good or remaining silent"
+    },
+    "translation": {
+      "ur": "جو اللہ اور یومِ آخرت پر ایمان رکھتا ہو، اسے اچھی بات کہنی چاہیے یا خاموش رہنا چاہیے۔",
+      "en": "Whoever believes in Allah and the Last Day, let him speak good or remain silent."
+    },
+    "source": {
+      "ur": "صحیح بخاری و صحیح مسلم",
+      "en": "Sahih al-Bukhari & Sahih Muslim"
+    }
+  }
+]
