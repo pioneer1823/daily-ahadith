@@ -16,6 +16,17 @@
     return `${d} ${months[m - 1]} ${y}`;
   }
 
+  function audioPlayerHTML(entry, strings) {
+    if (!entry.audio) return '';
+    const label = (strings && strings.audioLabel) || 'Voice note';
+    const credit = entry.audioCredit ? ` — ${DA.escapeHtml(entry.audioCredit)}` : '';
+    return `
+    <div class="hadith-audio">
+      <div class="hadith-audio-label">${DA.escapeHtml(label)}${credit}</div>
+      <audio controls preload="none" src="${DA.escapeHtml(entry.audio)}"></audio>
+    </div>`;
+  }
+
   function hadithCardHTML(entry, lang, strings) {
     const title = DA.resolveField(entry.title, lang);
     const translation = DA.resolveField(entry.translation, lang);
@@ -24,29 +35,31 @@
       ? `<div class="pending-note">${DA.escapeHtml(strings.pendingNotice)}</div>`
       : '';
     return `
-      <div class="eyebrow">
-        <span>${DA.escapeHtml(strings.hadithOfDay)}</span>
-        <span style="color:#B8AC95;">&middot;</span>
-        <span class="date">${formatDate(entry.date, lang)}</span>
-      </div>
-      <div class="hadith-card">
-        <div class="hadith-arabic" dir="rtl">${entry.arabic}</div>
-        <div class="hadith-divider"></div>
-        <div class="hadith-translation" dir="${lang === 'en' ? 'ltr' : 'rtl'}">${DA.escapeHtml(translation.value || '')}</div>
-        ${pendingNote}
-        <div class="hadith-source">${DA.escapeHtml(strings.sourceLabel)}: ${DA.escapeHtml(source.value || '')}</div>
-      </div>`;
+    <div class="eyebrow">
+      <span>${DA.escapeHtml(strings.hadithOfDay)}</span>
+      <span style="color:#B8AC95;">&middot;</span>
+      <span class="date">${formatDate(entry.date, lang)}</span>
+    </div>
+    <div class="hadith-card">
+      <div class="hadith-arabic" dir="rtl">${entry.arabic}</div>
+      <div class="hadith-divider"></div>
+      <div class="hadith-translation" dir="${lang === 'en' ? 'ltr' : 'rtl'}">${DA.escapeHtml(translation.value || '')}</div>
+      ${pendingNote}
+      <div class="hadith-source">${DA.escapeHtml(strings.sourceLabel)}: ${DA.escapeHtml(source.value || '')}</div>
+      ${audioPlayerHTML(entry, strings)}
+    </div>`;
   }
 
   function archiveCardHTML(entry, lang, strings) {
     const title = DA.resolveField(entry.title, lang);
     const translation = DA.resolveField(entry.translation, lang);
     return `
-      <div class="archive-card">
-        <div class="archive-card-date">${formatDate(entry.date, lang)}</div>
-        <div class="archive-card-title heading-font">${DA.escapeHtml(title.value || '')}</div>
-        <div class="archive-card-desc">${DA.escapeHtml((translation.value || '').slice(0, 140))}${(translation.value || '').length > 140 ? '…' : ''}</div>
-      </div>`;
+    <div class="archive-card">
+      <div class="archive-card-date">${formatDate(entry.date, lang)}</div>
+      <div class="archive-card-title heading-font">${DA.escapeHtml(title.value || '')}</div>
+      <div class="archive-card-desc">${DA.escapeHtml((translation.value || '').slice(0, 140))}${(translation.value || '').length > 140 ? '…' : ''}</div>
+      ${audioPlayerHTML(entry, strings)}
+    </div>`;
   }
 
   async function renderHome() {
@@ -71,11 +84,11 @@
     document.getElementById('step-grid').innerHTML = steps
       .map(
         ([title, desc], i) => `
-        <div class="step-card">
-          <div class="step-num">${i + 1}</div>
-          <div class="step-title heading-font">${DA.escapeHtml(title)}</div>
-          <div class="step-desc">${DA.escapeHtml(desc)}</div>
-        </div>`
+      <div class="step-card">
+        <div class="step-num">${i + 1}</div>
+        <div class="step-title heading-font">${DA.escapeHtml(title)}</div>
+        <div class="step-desc">${DA.escapeHtml(desc)}</div>
+      </div>`
       )
       .join('');
 
@@ -134,11 +147,11 @@
     document.getElementById('step-grid').innerHTML = steps
       .map(
         ([title, desc], i) => `
-        <div class="step-card">
-          <div class="step-num">${i + 1}</div>
-          <div class="step-title heading-font">${DA.escapeHtml(title)}</div>
-          <div class="step-desc">${DA.escapeHtml(desc)}</div>
-        </div>`
+      <div class="step-card">
+        <div class="step-num">${i + 1}</div>
+        <div class="step-title heading-font">${DA.escapeHtml(title)}</div>
+        <div class="step-desc">${DA.escapeHtml(desc)}</div>
+      </div>`
       )
       .join('');
   }

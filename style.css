@@ -182,6 +182,19 @@ img { max-width: 100%; display: block; }
   margin-top: 4px;
 }
 
+/* Voice note player */
+.hadith-audio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line-soft);
+}
+.hadith-audio-label { font-size: 13px; color: var(--muted); font-weight: 600; }
+.hadith-audio audio { width: 100%; height: 36px; }
+.archive-card .hadith-audio { border-top: none; padding-top: 4px; }
+.archive-card .hadith-audio audio { height: 32px; }
+
 .cta-row { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .btn-primary {
   background: var(--green);

@@ -34,7 +34,8 @@
     "pendingNotice": "Shown in Urdu — translation coming soon",
     "sourceLabel": "Source",
     "viewAll": "View full archive →",
-    "backHome": "← Back to today's lesson"
+    "backHome": "← Back to today's lesson",
+    "audioLabel": "Voice note"
   },
   "ur": {
     "label": "اردو",
@@ -71,7 +72,8 @@
     "pendingNotice": "اردو میں دکھایا جا رہا ہے — ترجمہ جلد شامل ہوگا",
     "sourceLabel": "حوالہ",
     "viewAll": "مکمل آرکائیو دیکھیں ←",
-    "backHome": "← آج کے سبق پر واپس جائیں"
+    "backHome": "← آج کے سبق پر واپس جائیں",
+    "audioLabel": "آواز"
   },
   "ar": {
     "label": "العربية",
@@ -108,7 +110,8 @@
     "pendingNotice": "معروض بالأردية — الترجمة قادمة قريباً",
     "sourceLabel": "المصدر",
     "viewAll": "عرض كامل الأرشيف ←",
-    "backHome": "← العودة إلى درس اليوم"
+    "backHome": "← العودة إلى درس اليوم",
+    "audioLabel": "تسجيل صوتي"
   },
   "fa": {
     "label": "فارسی",
@@ -145,7 +148,8 @@
     "pendingNotice": "به زبان اردو نمایش داده می‌شود — ترجمه به‌زودی اضافه می‌شود",
     "sourceLabel": "منبع",
     "viewAll": "مشاهده کامل آرشیو ←",
-    "backHome": "← بازگشت به درس امروز"
+    "backHome": "← بازگشت به درس امروز",
+    "audioLabel": "پیام صوتی"
   },
   "ps": {
     "label": "پښتو",
@@ -182,6 +186,7 @@
     "pendingNotice": "په اردو کې ښودل کیږي — ژباړه ژر خپریږي",
     "sourceLabel": "سرچینه",
     "viewAll": "بشپړ آرشیف وګورئ ←",
-    "backHome": "← د نن ورځې درس ته بیرته"
+    "backHome": "← د نن ورځې درس ته بیرته",
+    "audioLabel": "غږیز پیغام"
   }
 }
